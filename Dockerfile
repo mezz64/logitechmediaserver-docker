@@ -16,7 +16,8 @@ CMD ["/sbin/my_init"]
 #########################################
 
 COPY install.sh /tmp/
-RUN chmod +x /tmp/install.sh && /tmp/install.sh && rm /tmp/install.sh
+#RUN chmod +x /tmp/install.sh && /tmp/install.sh && rm /tmp/install.sh
+RUN chmod +x /tmp/install.sh; sleep 1; /tmp/install.sh; rm /tmp/install.sh
 
 #########################################
 ##         EXPORTS AND VOLUMES         ##
