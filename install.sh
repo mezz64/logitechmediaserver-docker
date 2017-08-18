@@ -25,7 +25,7 @@ add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ trusty-updates univ
 
 # Install Dependencies
 apt-get update -qq
-apt-get install -qy lame faad flac sox
+apt-get install -qy lame faad flac sox libio-socket-ssl-perl
 
 #########################################
 ##  FILES, SERVICES AND CONFIGURATION  ##
